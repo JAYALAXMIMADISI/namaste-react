@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Namaste React</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <!--This will be rendered and React will work only in root id div tag -->
+    <div id="root">
+      <h1>Jaya</h1>
+      <h1>Jaya</h1>
+      <h1>Jaya</h1>
+      <h1>Jaya</h1>
+      <h1>Jaya</h1>
+      <!--this is replaced when we send some elements in to the render-->
+      <h1>Jaya</h1>
+      <h1>Jaya</h1>
+    </div>
+    <!-- <script>
+        const heading=document.createElement("h1");
+        heading.innerHTML='Hello World Javascript';
+        const root=document.getElementById('root');
+        root.appendChild(heading);
+    </script> -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="./App.js">
+      // if this is kept at the top of the before 2 script tags it will throw an error saying React is not defined
+    </script>
+  </body>
+</html>
+
+<!--React is library means it can work in a independent part of your app ie. it can be applied only to a specific section or part of app-->
+
+<!--package.json is the configuration for npm take care abut the pacakages and dependencies
+    package.json keep track of the versions installed packeges
+
+npm will take care about the versions of the packages
+
+buldler is a js code
+
+different budler
+webpack
+wheat
+parcel
+
+bulder budles the app 
+
+create react app uses webpack 
+
+2 types of dependencies
+dev dependency--- generally required in development mode
+normal dependency--can be used for production also
+
+npm install -D --- D indicates dev dependency`
+
+^2.8.4
+^ symbol indicates that when ther is a minor version change in the pacakage like 2.8.4 then it will automatically update when we keep ^
+
+~2.8.4 
+~ indicates that when there is a major version change like 2.8.4 to 3.0.0 it is automatically upgraded
+
+It is safe to use ^ than ~ as major updations may has many changes and it will effect your app
+
+
+package.lock.json keeps the track of exact version of the package
+
+node modules consists all the code related to the packages installed
+Transitive dependency-- A package is dependent on another dependecy ad that dependency depende 
+on another dependency in taht way many dependecncies were installed in node modules of we install 
+one dependency
+collection of dependencies and a data base for all dependencies
+
+
+-->
