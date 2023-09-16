@@ -8,17 +8,17 @@
     <title>Namaste React</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <!-- <h1>Hello</h1> -->
     <!--This will be rendered and React will work only in root id div tag -->
     <div id="root">
+      <!-- <h1>Jaya</h1>
       <h1>Jaya</h1>
       <h1>Jaya</h1>
       <h1>Jaya</h1>
-      <h1>Jaya</h1>
-      <h1>Jaya</h1>
+      <h1>Jaya</h1> -->
       <!--this is replaced when we send some elements in to the render-->
-      <h1>Jaya</h1>
-      <h1>Jaya</h1>
+      <!-- <h1>Jaya</h1>
+      <h1>Jaya</h1> -->
     </div>
     <!-- <script>
         const heading=document.createElement("h1");
@@ -26,15 +26,15 @@
         const root=document.getElementById('root');
         root.appendChild(heading);
     </script> -->
-    <script
+    <!-- <script
       crossorigin
       src="https://unpkg.com/react@18/umd/react.development.js"
     ></script>
     <script
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
-    ></script>
-    <script src="./App.js">
+    ></script> -->
+    <script type='module'src="./App.js"> //indicates that it is not a browser scripts and consider as a module
       // if this is kept at the top of the before 2 script tags it will throw an error saying React is not defined
     </script>
   </body>
@@ -82,4 +82,11 @@ one dependency
 collection of dependencies and a data base for all dependencies
 
 
+no need to push mnode modules to git beacause we can recreate node modules with package.json and package.lock.json
+
+npx parcel index.html
+
+npx -- is used to execute a package
+
+cdn links is not a good way to bring react to the app instead install react as a package  npm install react
 -->
